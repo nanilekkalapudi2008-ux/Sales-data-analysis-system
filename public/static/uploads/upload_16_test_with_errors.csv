@@ -1,0 +1,9 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,customer,region
+2001,1,Laptop,Electronics,2026-11-01,2,1200.00,John Smith,North
+2002,4,Ergonomic Chair,Furniture,2026-11-02,0,150.00,Sarah Connor,West
+2003,5,Executive Pen,Stationery,invalid-date,10,12.50,Tom Hardy,South
+2004,6,Gaming Keyboard,Electronics,2026-11-03,-5,95.00,Bruce Wayne,East
+1001,1,Laptop,Electronics,2026-01-15,3,1200.00,Alice Walker,North
+2005,,Smartwatch,Electronics,2026-11-04,4,180.00,,Central
+2006,7,Wireless Headphones,,2026-11-05,3,85.00,Clark Kent,West
+2001,1,Laptop,Electronics,2026-11-06,1,1200.00,Duplicate John,North

@@ -1,0 +1,51 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,customer,region
+5001,1,Laptop,Electronics,2026-01-05,4,1200.00,John Miller,North
+5002,4,Ergonomic Chair,Furniture,2026-01-12,10,150.00,Sophia Davis,West
+5003,7,Wireless Headphones,Electronics,2026-01-19,16,85.00,Ethan Brown,South
+5004,5,Executive Pen,Stationery,2026-01-26,45,12.50,Emma Wilson,East
+5005,9,4K Monitor,Electronics,2026-02-02,8,350.00,Liam Taylor,Central
+5006,6,Gaming Keyboard,Electronics,2026-02-09,14,95.00,Olivia Anderson,North
+5007,3,Office Desk,Furniture,2026-02-16,6,280.00,Noah Thomas,West
+5008,10,Bluetooth Earbuds,Electronics,2026-02-23,22,45.00,Ava Jackson,South
+5009,8,Smartwatch,Electronics,2026-03-02,11,180.00,William White,East
+5010,1,Laptop,Electronics,2026-03-09,6,1200.00,Isabella Harris,Central
+5011,2,Car,Automobile,2026-03-16,1,21500.00,James Martin,North
+5012,4,Ergonomic Chair,Furniture,2026-03-23,12,150.00,Mia Thompson,West
+5013,7,Wireless Headphones,Electronics,2026-03-30,15,85.00,Benjamin Garcia,South
+5014,9,4K Monitor,Electronics,2026-04-06,7,350.00,Charlotte Martinez,East
+5015,5,Executive Pen,Stationery,2026-04-13,60,12.50,Lucas Robinson,Central
+5016,6,Gaming Keyboard,Electronics,2026-04-20,9,95.00,Amelia Clark,North
+5017,8,Smartwatch,Electronics,2026-04-27,14,180.00,Henry Rodriguez,West
+5018,1,Laptop,Electronics,2026-05-04,5,1200.00,Harper Lewis,South
+5019,3,Office Desk,Furniture,2026-05-11,8,280.00,Alexander Lee,East
+5020,10,Bluetooth Earbuds,Electronics,2026-05-18,25,45.00,Evelyn Walker,Central
+5021,2,Car,Automobile,2026-05-25,1,19800.00,Daniel Hall,North
+5022,4,Ergonomic Chair,Furniture,2026-06-01,14,150.00,Abigail Allen,West
+5023,7,Wireless Headphones,Electronics,2026-06-08,18,85.00,Matthew Young,South
+5024,9,4K Monitor,Electronics,2026-06-15,10,350.00,Emily Hernandez,East
+5025,1,Laptop,Electronics,2026-06-22,8,1200.00,Jackson King,Central
+5026,6,Gaming Keyboard,Electronics,2026-06-29,12,95.00,Elizabeth Wright,North
+5027,5,Executive Pen,Stationery,2026-07-06,70,12.50,Sebastian Lopez,West
+5028,8,Smartwatch,Electronics,2026-07-13,16,180.00,Avery Hill,South
+5029,3,Office Desk,Furniture,2026-07-20,9,280.00,Jack Scott,East
+5030,10,Bluetooth Earbuds,Electronics,2026-07-27,30,45.00,Scarlett Green,Central
+5031,1,Laptop,Electronics,2026-08-03,7,1200.00,Owen Adams,North
+5032,4,Ergonomic Chair,Furniture,2026-08-10,16,150.00,Chloe Baker,West
+5033,2,Car,Automobile,2026-08-17,1,22000.00,Theodore Gonzalez,South
+5034,7,Wireless Headphones,Electronics,2026-08-24,20,85.00,Victoria Nelson,East
+5035,9,4K Monitor,Electronics,2026-08-31,11,350.00,Samuel Carter,Central
+5036,6,Gaming Keyboard,Electronics,2026-09-07,15,95.00,Penelope Mitchell,North
+5037,8,Smartwatch,Electronics,2026-09-14,18,180.00,Joseph Perez,West
+5038,5,Executive Pen,Stationery,2026-09-21,85,12.50,Riley Roberts,South
+5039,3,Office Desk,Furniture,2026-09-28,10,280.00,Levi Turner,East
+5040,1,Laptop,Electronics,2026-10-05,9,1200.00,Zoey Phillips,Central
+5041,10,Bluetooth Earbuds,Electronics,2026-10-12,35,45.00,David Campbell,North
+5042,4,Ergonomic Chair,Furniture,2026-10-19,18,150.00,Nora Parker,West
+5043,7,Wireless Headphones,Electronics,2026-10-26,22,85.00,Wyatt Evans,South
+5044,9,4K Monitor,Electronics,2026-11-02,12,350.00,Lily Edwards,East
+5045,6,Gaming Keyboard,Electronics,2026-11-09,16,95.00,John Collins,Central
+5046,8,Smartwatch,Electronics,2026-11-16,20,180.00,Hannah Stewart,North
+5047,1,Laptop,Electronics,2026-11-23,10,1200.00,Luke Sanchez,West
+5048,2,Car,Automobile,2026-11-30,1,24500.00,Grace Morris,South
+5049,3,Office Desk,Furniture,2026-12-07,12,280.00,Gabriel Rogers,East
+5050,10,Bluetooth Earbuds,Electronics,2026-12-14,40,45.00,Zoe Reed,Central

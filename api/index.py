@@ -31,9 +31,9 @@ class VercelPathFix:
                 )
                 environ['QUERY_STRING'] = clean_query
         else:
-            original = environ.get('HTTP_X_FORWARDED_URI') or environ.get('HTTP_X_MATCHED_PATH')
-            if original and not original.startswith('/api'):
-                environ['PATH_INFO'] = original.split('?')[0]
+            p = environ.get('PATH_INFO', '')
+            if p in ('/api/index', '/api/index.py', '/api'):
+                environ['PATH_INFO'] = '/'
 
         return self.wsgi_app(environ, start_response)
 

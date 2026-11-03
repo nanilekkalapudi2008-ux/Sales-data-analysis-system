@@ -1,0 +1,16 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,customer,region
+3001,1,Laptop,Electronics,2026-01-10,5,1250.00,Aarav Patel,North
+3002,6,Gaming Keyboard,Electronics,2026-01-18,12,89.99,Rohan Sharma,West
+3003,7,Wireless Headphones,Electronics,2026-01-25,15,79.50,Priya Nair,South
+3004,8,Smartwatch,Electronics,2026-02-04,8,199.00,Aditya Singh,East
+3005,9,4K Monitor,Electronics,2026-02-14,6,349.00,Sneha Kulkarni,Central
+3006,10,Bluetooth Earbuds,Electronics,2026-02-22,25,39.99,Vikram Das,North
+3007,1,Laptop,Electronics,2026-03-05,7,1250.00,Ananya Iyer,West
+3008,6,Gaming Keyboard,Electronics,2026-03-12,14,89.99,Karthik Rao,South
+3009,7,Wireless Headphones,Electronics,2026-03-19,18,79.50,Deepa Menon,East
+3010,8,Smartwatch,Electronics,2026-03-27,10,199.00,Rahul Verma,Central
+3011,9,4K Monitor,Electronics,2026-04-03,9,349.00,Neha Kapoor,North
+3012,1,Laptop,Electronics,2026-04-15,4,1250.00,Amitabh Roy,West
+3013,10,Bluetooth Earbuds,Electronics,2026-04-22,30,39.99,Meera Joshi,South
+3014,8,Smartwatch,Electronics,2026-05-02,12,199.00,Siddharth Sen,East
+3015,9,4K Monitor,Electronics,2026-05-18,8,349.00,Pooja Reddy,Central

@@ -62,7 +62,17 @@ def inject_global_vars():
 # ----------------- Authentication Routes -----------------
 
 @app.route('/')
+@app.route('/api/index')
+@app.route('/api/index.py')
+@app.route('/api')
 def index():
+    # If path parameter was passed via Vercel rewrite
+    forwarded_path = request.args.get('path')
+    if forwarded_path and forwarded_path not in ('/', '/api/index', '/api/index.py'):
+        if not forwarded_path.startswith('/'):
+            forwarded_path = '/' + forwarded_path
+        return redirect(forwarded_path)
+
     if 'user_id' in session:
         return redirect(url_for('dashboard'))
     return redirect(url_for('login'))
