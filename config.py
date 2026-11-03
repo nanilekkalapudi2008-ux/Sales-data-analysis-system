@@ -14,8 +14,10 @@ class Config:
     
     # Database Type: 'sqlite' (primary) or 'mysql'
     DB_TYPE = os.getenv('DB_TYPE', 'sqlite')
-    SQLITE_DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sales_data.db')
-    
-    # Uploads
-    UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'uploads')
+    if os.getenv('VERCEL'):
+        SQLITE_DB_PATH = '/tmp/sales_data.db'
+        UPLOAD_FOLDER = '/tmp/uploads'
+    else:
+        SQLITE_DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sales_data.db')
+        UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'uploads')
     MAX_CONTENT_LENGTH = 16 * 1024 * 1024  # 16 MB max

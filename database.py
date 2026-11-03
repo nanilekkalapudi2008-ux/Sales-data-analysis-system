@@ -34,7 +34,7 @@ def get_mysql_connection(select_db=True):
 
 def get_sqlite_connection():
     """Fallback SQLite database connection."""
-    db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sales_data.db')
+    db_path = Config.SQLITE_DB_PATH
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
     return conn
@@ -113,6 +113,43 @@ def init_db():
             INSERT OR IGNORE INTO products (product_id, product_name, category)
             VALUES (?, ?, ?)
             """, (p_id, p_name, p_cat))
+
+        # Seed standard default users (essential for cloud platforms like Vercel)
+        from werkzeug.security import generate_password_hash
+        default_users = [
+            (1, 'Administrator', 'admin@example.com', 'admin', generate_password_hash('admin123')),
+            (2, 'L BARDRINATH', 'badri@gmail.com', 'badri', generate_password_hash('password123')),
+            (3, 'Demo User', 'demo@example.com', 'demo', generate_password_hash('demo123'))
+        ]
+        for u_id, u_name, u_email, u_user, u_hash in default_users:
+            cursor.execute("""
+            INSERT OR IGNORE INTO users (user_id, full_name, email, username, password_hash)
+            VALUES (?, ?, ?, ?, ?)
+            """, (u_id, u_name, u_email, u_user, u_hash))
+
+        # Auto-seed initial sales records on Vercel so the cloud dashboard is populated
+        if os.getenv('VERCEL'):
+            sample_csv = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'sample_sales.csv')
+            if os.path.exists(sample_csv):
+                try:
+                    import pandas as pd
+                    df_sample = pd.read_csv(sample_csv)
+                    for _, srow in df_sample.iterrows():
+                        cursor.execute("""
+                        INSERT OR IGNORE INTO sales (sale_id, sale_date, product_id, quantity, unit_price, customer, region, user_id)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                        """, (
+                            int(srow['sale_id']),
+                            str(srow['sale_date']),
+                            int(srow['product_id']),
+                            int(srow['quantity']),
+                            float(srow['unit_price']),
+                            str(srow['customer']),
+                            str(srow['region']),
+                            1
+                        ))
+                except Exception as _se:
+                    print(f"[Warning] Auto-seed sales on Vercel: {_se}")
 
         conn.commit()
         conn.close()
