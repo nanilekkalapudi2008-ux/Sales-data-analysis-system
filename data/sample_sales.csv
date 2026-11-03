@@ -1,0 +1,31 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,customer,region
+1001,1,Laptop,Electronics,2026-01-15,3,1200.00,Alice Walker,North
+1002,4,Ergonomic Chair,Furniture,2026-01-22,8,150.00,Robert Chen,West
+1003,5,Executive Pen,Stationery,2026-02-05,25,12.50,Priya Sharma,South
+1004,6,Gaming Keyboard,Electronics,2026-02-18,6,95.00,David Miller,East
+1005,1,Laptop,Electronics,2026-03-02,4,1200.00,Sneha Reddy,Central
+1006,7,Wireless Headphones,Electronics,2026-03-14,12,85.00,Michael Ross,North
+1007,9,4K Monitor,Electronics,2026-03-27,5,350.00,Vikram Malhotra,West
+1008,3,Office Desk,Furniture,2026-04-08,6,280.00,Emily Davis,East
+1009,8,Smartwatch,Electronics,2026-04-19,10,180.00,Ananya Patel,South
+1010,10,Bluetooth Earbuds,Electronics,2026-04-26,15,45.00,Kevin Zhang,North
+1011,1,Laptop,Electronics,2026-05-04,5,1200.00,Rohan Verma,Central
+1012,2,Car,Automobile,2026-05-15,1,18500.00,James Wilson,West
+1013,6,Gaming Keyboard,Electronics,2026-05-22,8,95.00,Aarav Gupta,East
+1014,4,Ergonomic Chair,Furniture,2026-06-03,10,150.00,Jessica Taylor,South
+1015,9,4K Monitor,Electronics,2026-06-18,7,350.00,Kavya Iyer,North
+1016,7,Wireless Headphones,Electronics,2026-06-29,14,85.00,Daniel Brown,West
+1017,1,Laptop,Electronics,2026-07-07,6,1200.00,Siddharth Rao,Central
+1018,8,Smartwatch,Electronics,2026-07-16,11,180.00,Rachel Green,East
+1019,3,Office Desk,Furniture,2026-07-28,4,280.00,Aditya Nair,South
+1020,5,Executive Pen,Stationery,2026-08-05,40,12.50,Pooja Hegde,North
+1021,10,Bluetooth Earbuds,Electronics,2026-08-14,18,45.00,Brian Clark,West
+1022,9,4K Monitor,Electronics,2026-08-25,9,350.00,Neha Kapoor,Central
+1023,1,Laptop,Electronics,2026-09-02,7,1200.00,Deepak Joshi,North
+1024,2,Car,Automobile,2026-09-15,1,19200.00,Samantha White,South
+1025,6,Gaming Keyboard,Electronics,2026-09-24,10,95.00,Arjun Singh,East
+1026,4,Ergonomic Chair,Furniture,2026-10-04,12,150.00,Meera Nambiar,West
+1027,8,Smartwatch,Electronics,2026-10-18,15,180.00,Christopher Lee,North
+1028,7,Wireless Headphones,Electronics,2026-10-29,20,85.00,Varun Nair,Central
+1029,1,Laptop,Electronics,2026-11-01,8,1200.00,Swati Deshmukh,South
+1030,3,Office Desk,Furniture,2026-11-02,5,280.00,Thomas Anderson,East

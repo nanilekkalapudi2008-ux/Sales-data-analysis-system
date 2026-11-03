@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sales Data Analysis System{% endblock %}</title>
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Chart.js CDN for interactive charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <!-- Top Header & Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="{{ url_for('dashboard') if current_user else url_for('login') }}" class="brand-link">
+                <span class="brand-icon">📊</span>
+                <span>Sales Data Analysis System</span>
+            </a>
+
+            {% if current_user %}
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="{{ url_for('dashboard') }}" class="nav-link {% if request.endpoint == 'dashboard' %}active{% endif %}">🏠 Dashboard</a></li>
+                    <li><a href="{{ url_for('sales_records') }}" class="nav-link {% if request.endpoint in ['sales_records', 'edit_sale'] %}active{% endif %}">📋 Sales Records</a></li>
+                    <li><a href="{{ url_for('add_sale') }}" class="nav-link {% if request.endpoint == 'add_sale' %}active{% endif %}">➕ Add New Sale</a></li>
+                    <li><a href="{{ url_for('import_csv') }}" class="nav-link {% if request.endpoint == 'import_csv' %}active{% endif %}">📤 Import CSV</a></li>
+                    <li><a href="{{ url_for('product_analysis') }}" class="nav-link {% if request.endpoint == 'product_analysis' %}active{% endif %}">📊 Product Analysis</a></li>
+                    <li><a href="{{ url_for('region_analysis') }}" class="nav-link {% if request.endpoint == 'region_analysis' %}active{% endif %}">🌍 Region Analysis</a></li>
+                    <li><a href="{{ url_for('profile') }}" class="nav-link {% if request.endpoint == 'profile' %}active{% endif %}">👤 Profile</a></li>
+                    <li><a href="{{ url_for('logout') }}" class="nav-link logout">🚪 Logout</a></li>
+                </ul>
+            </nav>
+            {% else %}
+            <div class="nav-menu">
+                <a href="{{ url_for('login') }}" class="nav-link {% if request.endpoint == 'login' %}active{% endif %}">🔑 Login</a>
+                <a href="{{ url_for('register') }}" class="nav-link {% if request.endpoint == 'register' %}active{% endif %}">📝 Register</a>
+            </div>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- Page Content Container -->
+    <main class="main-content">
+        <!-- Flash Alert Messages -->
+        <div class="alert-container" style="margin-top: 1.25rem;">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            <span>{{ message }}</span>
+                            <button type="button" class="alert-close" aria-label="Close">&times;</button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Project Footer -->
+    <footer class="main-footer">
+        <p><strong>Sales Data Analysis System</strong> &copy; 2026 &bull; B.Tech CSE Project &bull; Powered by Flask, SQLite, Pandas &amp; Chart.js</p>
+    </footer>
+
+    <!-- App Scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

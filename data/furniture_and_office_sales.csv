@@ -1,0 +1,16 @@
+sale_id,product_id,product_name,category,sale_date,quantity,unit_price,customer,region
+4001,3,Office Desk,Furniture,2026-06-02,8,290.00,Robert Vance,North
+4002,4,Ergonomic Chair,Furniture,2026-06-09,15,160.00,Phyllis Lapin,East
+4003,5,Executive Pen,Stationery,2026-06-16,50,15.00,Jim Halpert,West
+4004,3,Office Desk,Furniture,2026-06-25,6,290.00,Pam Beesly,South
+4005,4,Ergonomic Chair,Furniture,2026-07-03,20,160.00,Dwight Schrute,Central
+4006,5,Executive Pen,Stationery,2026-07-12,80,15.00,Stanley Hudson,North
+4007,3,Office Desk,Furniture,2026-07-21,10,290.00,Michael Scott,East
+4008,4,Ergonomic Chair,Furniture,2026-07-29,18,160.00,Angela Martin,West
+4009,5,Executive Pen,Stationery,2026-08-04,60,15.00,Kevin Malone,South
+4010,3,Office Desk,Furniture,2026-08-15,12,290.00,Oscar Martinez,Central
+4011,4,Ergonomic Chair,Furniture,2026-08-26,22,160.00,Andy Bernard,North
+4012,5,Executive Pen,Stationery,2026-09-05,100,15.00,Erin Hannon,East
+4013,3,Office Desk,Furniture,2026-09-18,7,290.00,Toby Flenderson,West
+4014,4,Ergonomic Chair,Furniture,2026-09-28,14,160.00,Meredith Palmer,South
+4015,5,Executive Pen,Stationery,2026-10-10,75,15.00,Creed Bratton,Central
